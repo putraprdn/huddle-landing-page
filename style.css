@@ -1,0 +1,170 @@
+:root {
+	/* ### Primary */
+	--Pink: hsl(322, 100%, 66%);
+
+	/* ### Neutral */
+	--Very-Pale-Cyan: hsl(193, 100%, 96%);
+	--Very-Dark-Cyan: hsl(192, 100%, 9%);
+	--Grayish-Blue: hsl(208, 11%, 55%);
+
+	/* Font  */
+	--Heading: "Poppins", sans-serif; /* Head -> 600 */
+	--Body: "Open Sans", sans-serif; /* Body -> 400, 700*/
+}
+/* 
+---------------- Reset CSS */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+img,
+picture {
+	max-width: 100%;
+	display: block;
+}
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* 
+---------------- Template */
+.title {
+	font-family: var(--Heading);
+	color: var(--Very-Dark-Cyan);
+}
+.description,
+p,
+a {
+	font-family: var(--Body);
+}
+.container {
+	padding: 2.5rem 4.5rem;
+}
+
+/*
+---------------- Main CSS */
+html {
+	font-size: 18px;
+}
+body {
+	min-height: 100vh;
+	color: black;
+}
+.main {
+	display: flex;
+	flex-direction: column;
+	background-image: url(./images/bg-hero-desktop.svg);
+	background-color: var(--Very-Pale-Cyan);
+	justify-content: space-between;
+}
+.main__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: var(--Heading);
+}
+.main__header-image {
+	width: 10.5rem;
+	height: 1.5rem;
+}
+.main__header-button {
+	font-size: 0.8rem;
+	font-weight: 700;
+	padding: 0.8rem 4rem;
+	background: white;
+	text-decoration: none;
+	color: #09262a;
+	border-radius: 50px;
+	box-shadow: 0 5px 25px -10px #b0b0b0;
+}
+.main__content {
+	display: flex;
+	/* align-items: center; */
+	margin-top: 3.5rem;
+}
+.main__text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-basis: 50%;
+	margin-right: 3rem;
+	padding-top: 4rem;
+}
+.main__title {
+	font-size: 2.3rem;
+	padding-right: 2rem;
+}
+.main__description {
+	color: var(--Very-Dark-Cyan);
+	margin-top: 1.8rem;
+	line-height: 1.5;
+}
+.main__button {
+	width: fit-content;
+	color: var(--Very-Pale-Cyan);
+	font-weight: 700;
+	font-size: 0.8rem;
+	background: var(--Pink);
+	border-radius: 55px;
+	margin-top: 2rem;
+	padding: 1rem 3rem;
+	text-decoration: none;
+}
+.main__image {
+	flex-basis: 60%;
+}
+
+/* 
+--------------- Another Section  */
+.section {
+	margin-top: 5rem;
+	background: white;
+}
+.section__group {
+	display: flex;
+	padding: 3.5rem 2rem 3.5rem 7rem;
+	box-shadow: 0 0 20px 0 gray;
+	border-radius: 10px;
+    height: 28.125rem;
+}
+.section__group:not(:first-child) {
+	margin-top: 2rem;
+}
+.section__group:nth-child(2) {
+    flex-direction: row-reverse;
+}
+.section__text{
+	display: flex;
+	flex-basis: 60%;
+	flex-direction: column;
+	justify-content: center;
+	padding-right: 5.5rem;
+}
+.section__group:nth-child(2) .section__text{
+    padding: 0 0 0 6rem;
+}
+.section__image {
+	width: 22rem;
+	flex-basis: 35%;
+}
+.section__description {
+	margin-top: 1rem;
+	color: var(--Grayish-Blue);
+    line-height: 1.5;
+}
