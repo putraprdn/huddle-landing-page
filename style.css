@@ -139,12 +139,12 @@ body {
 .section__group {
 	display: flex;
 	padding: 3.5rem 2rem 3.5rem 7rem;
-	box-shadow: 0 0 20px 0 gray;
+	box-shadow: 0 0 20px -15px gray;
 	border-radius: 10px;
     height: 28.125rem;
 }
 .section__group:not(:first-child) {
-	margin-top: 2rem;
+	margin-top: 2.5rem;
 }
 .section__group:nth-child(2) {
     flex-direction: row-reverse;
