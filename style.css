@@ -281,6 +281,86 @@ body {
 	text-align: right;
 }
 
-
 /* 
 --------------- Responsive Goes Here  */
+@media screen and (max-width: 450px) {
+	html {
+		font-size: 13px;
+	}
+	.container {
+		padding: 2rem;
+	}
+	.main {
+		background-image: url(./images/bg-hero-mobile.svg);
+	}
+	.main__header-button {
+		padding: 1rem 2.5rem;
+	}
+	.main__content {
+		flex-direction: column;
+		margin-top: 5rem;
+		text-align: center;
+	}
+	.main__text,
+	.main__title {
+		padding: 0;
+		margin-right: 0;
+	}
+	.main__text {
+		align-items: center;
+	}
+	.main__image {
+		margin-top: 3.5rem;
+	}
+
+	.section__group,
+	.section__group:nth-child(2) {
+		flex-direction: column-reverse;
+		align-items: center;
+		padding: 2rem;
+	}
+	.section__image {
+		width: 15rem;
+	}
+	.section__text,
+	.section__group:nth-child(2) .section__text {
+		text-align: center;
+		padding: 0;
+		margin-top: 2rem;
+	}
+
+	.join {
+		width: 90%;
+		padding: 2rem;
+		text-align: center;
+	}
+
+	.footer {
+		display: flex;
+		flex-direction: column;
+		padding-top: 8rem;
+	}
+	.footer__container {
+		flex-direction: column;
+	}
+	.footer__logo {
+		width: 50%;
+	}
+	.footer__info {
+		margin-bottom: 2rem;
+	}
+	.footer__link-group {
+		margin: 0;
+	}
+	.footer__link-item {
+		margin-top: 1rem;
+	}
+	.footer__social-group {
+		justify-content: center;
+		margin: 2rem 0 0;
+	}
+
+	.footer__copyright {
+		text-align: center;
+	}
+}
