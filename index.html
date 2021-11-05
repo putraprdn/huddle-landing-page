@@ -20,7 +20,7 @@
 
 <body>
 
-  <main class="main container">
+  <main role="main" class="main container">
     <div class="main__header">
       <img class="main__header-image" src="./images/logo.svg" alt="Huddle">
       <a class="main__header-button button--active" href="#">
@@ -42,50 +42,53 @@
       </div>
 
       <div class="main__image">
-        <img src="./images/illustration-mockups.svg" alt="">
+        <img src="./images/illustration-mockups.svg" alt="Mockups Illustration" aria-hidden="true">
       </div>
     </div>
   </main>
 
-  <section class="section container">
+  <section role="region" class="section container">
     <div class="section__group">
       <div class="section__text">
-        <h1 class="title"> Grow Together</h1>
+        <h2 class="title"> Grow Together</h2>
         <p class="section__description description">Generate meaningful discussions with your audience and build a
           strong, loyal community.
           Think of the insightful conversations you miss out on with a feedback form.</p>
       </div>
-      <img class="section__image" src="./images/illustration-grow-together.svg" alt="Grow Together Illustration">
+      <img class="section__image" src="./images/illustration-grow-together.svg" alt="Grow Together Illustration"
+        aria-hidden="true">
     </div>
 
     <div class="section__group">
       <div class="section__text">
-        <h1 class="title">
+        <h2 class="title">
           Flowing Conversations
-        </h1>
+        </h2>
         <p class="section__description description">
           You wouldn't paginate a conversation in real life, so why do it online? Our threads
           have just-in-time loading for a more natural flow.
         </p>
       </div>
       <img class="section__image" src="./images/illustration-flowing-conversation.svg"
-        alt="Flowing  Conversations Illustration">
+        alt="Flowing  Conversations Illustration" aria-hidden="true">
     </div>
 
     <div class="section__group">
       <div class="section__text">
-        <h1 class="title">
+        <h2 class="title">
           Your Users
-        </h1>
+        </h2>
         <p class="section__description description">
           It takes no time at all to integrate Huddle with your app's authentication solution.
           This means, once signed in to your app, your users can start chatting immediately.
         </p>
       </div>
-      <img class="section__image" src="./images/illustration-your-users.svg" alt="Your Users Illustration">
+      <img class="section__image" src="./images/illustration-your-users.svg" alt="Your Users Illustration"
+        aria-hidden="true">
     </div>
   </section>
-  <div class="join">
+
+  <section role="region" class="join">
     <p class="join__text title">
       Ready To Build Your Community?
     </p>
@@ -93,9 +96,9 @@
       Get Started For Free
     </a>
 
-  </div>
+  </section>
 
-  <footer class="footer container">
+  <footer role="contentinfo" class="footer container">
     <img class="footer__logo" src="./images/logo.svg" alt="Huddle Logo">
     <div class="footer__container">
       <div class="footer__info">
@@ -114,7 +117,7 @@
           </p>
         </div>
         <div class="footer__details">
-          <img class="footer__contact-icon" src="./images/icon-email.svg" alt="Email Icon" aria-hidden="trues">
+          <img class="footer__contact-icon" src="./images/icon-email.svg" alt="Email Icon" aria-hidden="true">
           <p class="footer__contact-text">
             example@huddle.com
           </p>
